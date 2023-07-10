@@ -89,7 +89,10 @@ const Admin = () => {
   };
 
   const savePost = async () => {
-    await axios.post("http://localhost:5000/addnews", post);
+    await axios.post(
+      "https://newsapp-backend-osld.onrender.com/addnews",
+      post
+    );
     navigate("/");
   };
 
