@@ -72,7 +72,7 @@ const Admin = () => {
         data.append("file", file);
 
         const response = await axios.post(
-          "http://localhost:5000//file/upload",
+          "https://newsapp-backend-osld.onrender.com/file/upload",
           data
         );
         console.log(response);

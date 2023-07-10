@@ -31,7 +31,7 @@ const NewsDetail = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/fechdetails/${id}`
+          `https://newsapp-backend-osld.onrender.com/fechdetails/${id}`
         );
         if(response.status === 200){
           setPost(response.data);

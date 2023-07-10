@@ -16,9 +16,9 @@ export class News extends Component {
 
   async componentDidMount() {
     this.setState({ loading: true });
-    let url = "http://localhost:5000/fetchallnews";
+    let url = "https://newsapp-backend-osld.onrender.com/fetchallnews";
     if (this.state.district !== "general") {
-      url = `http://localhost:5000/fetchallnews/${this.state.district}`;
+      url = `https://newsapp-backend-osld.onrender.com/fetchallnews/${this.state.district}`;
     }
     const response = await axios.get(url);
     this.setState({ articles: response.data });
