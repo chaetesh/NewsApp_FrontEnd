@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was was deployed at [https://famous-basbousa-c26e9b.netlify.app/](https://famous-basbousa-c26e9b.netlify.app/).
 
 ## Available Scripts
 
