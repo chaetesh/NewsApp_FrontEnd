@@ -11,7 +11,7 @@ const NewsItem = (props) => {
 
   return (
     <div className="my-3">
-      <Link to={newsUrl} target="_blank" style={{textDecoration:'none'}}>
+      <Link to={newsUrl} target="_blank" style={{ textDecoration: "none" }}>
         <Card sx={{ maxWidth: 450 }}>
           <CardActionArea>
             <CardMedia component="img" height="300" image={photo} alt="" />
@@ -19,7 +19,7 @@ const NewsItem = (props) => {
               <Typography gutterBottom variant="h5" component="div">
                 {title}...
               </Typography>
-              <p>{description}...</p>
+              <p>{description.length > 10 ? description.substr(0,40):description}....</p>
               <Typography variant="body2" color="text.secondary">
                 Last Updated {new Date(createdAt).toLocaleString()}
               </Typography>
